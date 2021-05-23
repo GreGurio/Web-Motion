@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.svg" alt="">
+          </a>
+        </div>
+        <nav class="menu">
+          <div class="menu__btn">
+            <span></span>
+          </div>
+          <ul class="menu__list">
+            <li><a href="index.html">ГОЛОВНА</a></li>
+            <li><a href="#">РОБОТА</a></li>
+            <li><a href="#">ПРО НАС</a></li>
+            <li><a href="contacts.html">КОНТАКТИ</a></li>
+          </ul>
+        </nav>
+        <div class="header-btn">
+          <a class="login" href="#">ВХІД</a>
+          <a class="sign-up" href="#">РЕЄСТРАЦІЯ</a>
+        </div>
+      </div>
+      <div class="header-title">
+        <h2 class="feedback__title">контакти</h2>
+      </div>
+    </div>
+  </header>
+
+  <section class="feedback section">
+    <div class="container">
+      <p class="feedback__subtitle">Ми знаходимось у Києві, за адресою перевулок Жуковського 17/25, офіс 4 (метро Васильківська).</p>
+      
+      <div class="feedback__cotacts-wrapper">
+        <div class="feedback__phone-wrapper">
+          <div class="feedback__meta-title">Телефон</div>
+          <div class="feedback__meta-link ">+38(066)503-41-61</div>
+        </div>
+        <div class="feedback__email-wrapper">
+          <div class="feedback__meta-title">E-mail</div>
+          <div class="feedback__meta-link">info@dita.com.ua</div>
+        </div>
+      </div>
+  
+      <div class="feedback__form">
+        <form action="#" method="POST" class="feedback-form" data-ajax="true">				
+        
+          <div class="feedback-form__title-wrapper">
+            <h3 class="feedback-form__title">ШВИДКА ВІДПОВІДЬ НА ПИТАННЯ</h3>
+            <div class="feedback-form__subtitle">Ви можете задати своє питання у цій формі і ми дамо відповідь у насближчий час зв’язавшись з вами.</div>
+          </div>
+  
+          <div class="feedback-form__row">
+            <div class="feedback-form__column">
+              <div class="feedback-form__field-wrapper">
+                <input  autocomplete="off" type="text" name="form-name" data-value="Ваше ім’я та прізвище*"
+                id="name" class="feedback-form__input input vs-req" />
+              </div>
+              <div class="feedback-form__field-wrapper">
+                <input  autocomplete="off" type="text" name="form-phone" data-value="Номер телефону*"
+                id="phone" class="feedback-form__input input vs-phone vs-req" />
+              </div>
+              <div class="feedback-form__field-wrapper">
+                <input  autocomplete="off" type="text" name="form-mail" data-value="Email"
+                id="mail" class="form-name-form__input input vs-email" />
+              </div>
+            </div>
+            <div class="feedback-form__column">
+              <div class="feedback-form__field-wrapper">
+                <textarea name="form-text" id="text" class="form-name-form__input input vs-req" data-value="Ваше питання*"></textarea>
+              </div>
+            </div>
+          </div>
+      
+          <div class="feedback-form__agreement">*Відправляючи форму, ви даєте згоду на <a href="#">обробку персональних даних</a>.</div>
+          <button type="submit" class="feedback-form__btn btn">Відправити<span>&nbspповідомлення</span></button>
+        </form>
+  
+        <div class="feedback__mobile-actions feedback-mobile-actions">
+          <a href="tel:+380665034161" class="feedback-mobile-actions__item">
+            <img src="img/feedback/phone_mobile.svg" alt="ico">
+          </a>
+          <button type="button" href="#mobile-feedback" class="feedback-mobile-actions__item vs-popup-link">
+            <img src="img/feedback/question_mobile.svg" alt="ico">
+          </button>
+          <a href="https://goo.gl/maps/WBjrsoMj4NV3cHxK9" target="_blank" class="feedback-mobile-actions__item">
+            <img src="img/feedback/googlemaps_mobile.svg" alt="ico">
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  
+  
+  
+   
+  </section>
+  <section class="map section">	
+    <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.6774169512114!2d30.49456530398778!3d50.391211735825195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8c5c0711259%3A0xbc7ff50d98662fec!2z0L_QtdGALiDQktCw0YHQuNC70LjRjyDQltGD0LrQvtCy0YHQutC-0LPQviwgOC8xNywg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sru!4v1617990093600!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__link">
+          <a href="#">Про нас</a>
+          <a href="#">Допомога</a>
+          <a href="#">Політика конфіценційності </a>
+        </div>
+        <div class="footer__copy">
+          © 2021 All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="js/slick.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
