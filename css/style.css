@@ -616,7 +616,126 @@ a {
     left: 0;
     right: 0;
 }
-
+.statistics {
+    margin: 160px 0 100px;
+}
+.statistics-items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.statistics-item {
+    transition: all .5s;
+}
+.statistics-item:hover {
+    transform: scale(1.1);
+}
+.statistics-item__title {
+    margin-bottom: 19px;
+    font-family: Century Gothic;
+}
+.statistics-item__num {
+    font-size: 96px;
+    line-height: 112px;
+    margin-bottom: 7px;
+    font-family: Century Gothic;
+    font-weight: 800;
+    background: linear-gradient(90deg,#250F8B, #5BF5F5);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.statistics-item__num span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: -20px;
+    background: linear-gradient(90deg,#250F8B, #5BF5F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.statistics-item__descr {
+    color: #250F8A;
+    font-family: Century Gothic;
+    text-transform: uppercase;
+}
+.statistics-item__num--speed span {
+    display: inline-block;
+    position: relative;
+}
+.statistics-item__num--speed span::before {
+    content: "+";
+    position: absolute;
+    top: -60px;
+}
+.video {
+    margin-bottom: 100px;
+    transition: all .5s;
+}
+.video:hover {
+    transform: scale(1.1);
+}
+.advantages-inner__row {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.advanteages__img {
+    transition: all .5s;
+}
+.advanteages__img:hover {
+    transform: scale(1.1);
+}
+.advantages__title {
+    font-size: 36px;
+    line-height: 42px;
+    color: #250F8A;
+    position: absolute;
+    top: 0;
+    font-family: Century Gothic;
+}
+.advantages__title--bottom {
+    right: 0;
+    bottom: 0;
+    top: auto;
+}
+.advantages__text {
+    width: 303px;
+}
+.advantages__text ul {
+    list-style: none;
+}
+.advantages-descr {
+    max-width: 570px;
+    width: 100%;
+}
+.design__images {
+    margin-bottom: 100px;
+    transition: all .5s;
+}
+.design__images:hover {
+    transform: scale(1.1);
+}
+.design-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.design-row__item {
+    max-width: 570px;
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.design-row__item-num {
+    color: #B70021;
+}
+.design-row__item-text {
+    max-width: 430px;
+    padding-top: 25px;
+}
 .container {
     padding: 0 15px;
     max-width: 1230px;
