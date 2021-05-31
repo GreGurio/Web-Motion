@@ -10,6 +10,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
 .header {
     background-image: url(../images/header-bg.jpg);
     min-height: 793px;
@@ -20,8 +22,6 @@ a {
 .header-title {
     max-width: 1000px;
     padding-top: 230px;
-}
-.header-title h2 {
     margin: auto;
 }
 .container {
@@ -88,6 +88,7 @@ a {
 .header-slider__item-content {
     display: flex;
     justify-content: space-between;
+    min-height: 360px;
 }
 .header-slider:hover {
     transform: scale(1.02);
@@ -314,7 +315,7 @@ a {
   }
   
   .feedback__title {
-    display: inline-block;
+    display: block;
     font-weight: bold;
     
     font-size: 9.6rem;
@@ -323,6 +324,7 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     margin: 0px 0px 50px 0px;
+    text-align: center;;
   }
   
   .feedback__subtitle {
@@ -506,25 +508,22 @@ a {
   
   .feedback-form__btn {
     font-weight: bold;
-    font-size: 2.4rem;
-    line-height: 1;
-    letter-spacing: 0.325em;
     text-transform: uppercase;
     color: #000000;
     font-family: Century Gothic;
     font-style: normal;
-    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
     letter-spacing: 0.325em;
     text-transform: uppercase;
-    width: 620px;
+    max-width: 620px;
     height: 65px;
     background: #FFCA00;
     border-radius: 50px;
     border: none;
     transition: all .5s;
+    padding: 0 60px;
   }
   
   .feedback-form__btn:hover {
@@ -771,7 +770,7 @@ a {
 }
 
 .header-content__text {
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 25px;
     color: #FFF;
     font-size: 24px;
@@ -832,6 +831,7 @@ a {
 .header-content {
     margin-top: 200px;
 }
+
 .vs-popup {
     -webkit-overflow-scrolling: touch;
     z-index: 10000;
@@ -876,16 +876,16 @@ a {
             transform: scale(1);
   }
   
-  .vs-popup .vs-active {
+  .vs-popup.vs-active {
     overflow: auto;
     visibility: visible;
   }
   
-  .vs-popup .vs-active::before {
+  .vs-popup.vs-active::before {
     opacity: 1;
   }
   
-  .vs-popup .vs-active .vs-popup__body {
+  .vs-popup.vs-active .vs-popup__body {
     -webkit-transition: all 0.3s ease 0.2s;
     -o-transition: all 0.3s ease 0.2s;
     transition: all 0.3s ease 0.2s;
@@ -924,7 +924,7 @@ a {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background: #FAD720;
+    background: linear-gradient(90deg,#250F8B, #5BF5F5);
     border-radius: 40px;
     padding: 50px;
     width: 100%;
@@ -944,6 +944,7 @@ a {
     background: url("../img/icons/vs-close_b.svg") 0 0 no-repeat;
     background-size: contain;
   }
+  
   .vs-form-popup__title {
     font-size: 3rem;
     text-align: center;
@@ -965,10 +966,11 @@ a {
     font-weight: bold;
     font-size: 4rem;
     line-height: 1.2;
-    letter-spacing: 0.325em;
+    letter-spacing: 0;
     text-transform: uppercase;
-    color: #000000;
-    margin: 0px 0px 40px 0px;
+    color: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+        margin: 0px 0px 40px 0px;
   }
   
   .popup-form__subtitle {
@@ -1008,7 +1010,36 @@ a {
   }
   
   .popup-form__btn {
-    max-width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #250F8A;
+    padding: 13px 39px;
+    background-color: #FFCA00;
+    border: none;
+    border-radius: 25px;
+    transition: all .5s;
+}
+.popup-form__btn:hover {
     background-color: #000;
-    color: #fff;
+    color: #FFF;
   }
+.success-wrapper {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.text {
+    margin: auto;
+    color: #FFF;
+    font-size: 50px;
+    font-family: Century Gothic;
+    font-weight: 800;
+}
+  

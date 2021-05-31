@@ -2254,14 +2254,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 
-  function form_submit(_x) {
+  /*function form_submit(_x) {
     return _form_submit.apply(this, arguments);
-  }
+  }*/
   /* Функция form_validate */
 
-
+/*
   function _form_submit() {
-    _form_submit = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(e) {
+    _form_submit = _asyncToGenerator(*//*#__PURE__*//*regeneratorRuntime.mark(function _callee(e) {
       var btn, form, error, form_action, form_method, ajax, form_data, response, form_error;
       return regeneratorRuntime.wrap(function _callee$(_context) {
         while (1) {
@@ -2280,6 +2280,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
               form_action = form.getAttribute('action') ? form.getAttribute('action').trim() : '#';
               form_method = form.getAttribute('method') ? form.getAttribute('method').trim() : 'GET';
               ajax = form.getAttribute('data-ajax'); //SendForm
+              
+              document.getElementById("name-surname").value;
+              document.getElementById("popup-tel-id").value;
+              document.getElementById("popup-mail-id").value;
+
 
               if (!ajax) {
                 _context.next = 15;
@@ -2328,7 +2333,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }, _callee);
     }));
     return _form_submit.apply(this, arguments);
-  }
+  }*/
 
   function form_validate(form) {
     var error = 0;
